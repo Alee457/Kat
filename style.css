@@ -147,28 +147,25 @@ body {
     }
     /* для карточек end*/
 
-/* для видео start
+/* для видео start*/
     .video{
-     width: 100%;
+      min-width: 100wh;
+      height: 100px;
      display:flex;
-     justify-content: center;
      align-items: center;
     }
     .slide-video{
+      height: 200px;
       margin: 5px;
-      flex: 1;
-      transition: all 500ms ease-in-out;
     }
-    .slide-video.active{
-      flex: 3;
-    }
-     для видео end*/
+  
+   /*  для видео end*/
 
 
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 .accordion {
-    margin-top: 40vh;
+    margin-top: 20vh;
     min-width: 100wh;
     height: 120px;
    /* margin: 5px auto;*/
