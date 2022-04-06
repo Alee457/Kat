@@ -48,16 +48,27 @@ table {
 
 html{
     box-sizing: border-box;
+    height: 100%;
   }
 
-  
 body {
     background: url(images/SSP.png) no-repeat;
-    background-size: 100%;
+    background-repeat: round;
     font-family: 'Fjalla One', sans-serif;
+    height: 100%;
     /*display: flex;*/
     }
 
+/* для header start*/
+header{
+    display: flex;
+}
+.schedule{
+    margin-left: 40px;
+}
+/* для header end*/
+
+/* для логотипа start*/
   .header_logo {
     display: inline-block;
     margin-top: 2px;
@@ -75,7 +86,7 @@ body {
     font-size: 4.2rem;
     animation: pulsate 1.5s infinite alternate;
     border: 0.2rem solid #fff;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 0.15em;
     box-shadow: 0 0 .2rem #fff,
                 0 0 .2rem #fff,
@@ -84,7 +95,6 @@ body {
                 0 0 0.28rem #bc13fe,
                 inset 0 0 1.3rem #bc13fe;
     }
-
     @keyframes pulsate {
         100% {
             text-shadow:
@@ -108,65 +118,41 @@ body {
              0 0 70px #bc13fe,
              0 0 80px #bc13fe;
    } }
-
-/*для карточек start*/
-  /* .container{
-     margin-top: 54vh;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .slide{
-      height: 18vh;
-      border-radius: 10px;
-      margin: 5px;
-      cursor: pointer;
-      color: #fff;
-      flex: 1;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-      transition: all 500ms ease-in-out;
-    }
-    .slide h3{
-      position: absolute;
-      font-size: 24px;
-      bottom: 20px;
-      left: 20px;
-      margin: 0;
-      opacity: 0;
-    }
-    .slide.active{
-      flex: 3;
-    }
-    .slide.active h3{
-      opacity: 1;
-      transition: opacity 0.3s ease-in 0.4s;
-    }
-    /* для карточек end*/
+p{
+    font-size: 20px;
+}
+  /* для логотипа end*/
 
 /* для видео start*/
     .video{
-      min-width: 100wh;
+      margin-top: 15vh;
+      width: 100wh;
       height: 100px;
-     display:flex;
-     align-items: center;
+      display:flex;
+      flex-direction: row;
+      cursor: pointer;
     }
     .slide-video{
       height: 200px;
       margin: 5px;
     }
-  
    /*  для видео end*/
 
+   /* для more_video start*/
+.more_video{
+    width: 200px;
+    height: 60px;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+   /* для more_video end*/
 
+  /* для фото start*/
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 .accordion {
-    margin-top: 20vh;
-    min-width: 100wh;
+    margin-top: 5vh;
+    width: 100wh;
     height: 120px;
    /* margin: 5px auto;*/
     display: flex;
@@ -176,8 +162,11 @@ body {
    /* margin-bottom: 20px;*/
 }
 .box {
+    margin-left: 5px;
+    border-radius: 3px;
     position: relative;
-    height: 100%;
+    /*height: 100%;*/
+    width: 100vh;
     flex: 1;
     background-position: left;
     background-size: cover;
@@ -192,7 +181,7 @@ body {
     background-image: url("images/Катя1.jpg");
 }
 .a2 {
-    background-image: url("images/Катя2.jpg")
+    background-image: url("images/Катя2.jpg");
 }
 .a3 {
     background-image: url("images/Катя3.jpg");
@@ -202,6 +191,7 @@ body {
 }
 .a5 {
     background-image: url("images/Катя5.jpg"); 
+    margin-right: 5px;
 }
 .text {
     position: absolute;
@@ -219,7 +209,8 @@ body {
         margin: 0;
     }
     .accordion {
-        flex-direction: column;
+       /* flex-direction: column;*/
+        flex-direction: row;
         height: 100px;
         box-shadow: none;
     }
@@ -227,6 +218,27 @@ body {
         box-shadow: none;
     }
     .box:hover {
-        flex: 2;
+        margin-top: -33px;
+        flex: 7;
     }
 }
+  /* для фото end*/
+
+    /* для footer start*/
+ footer{
+     display: flex;
+     position: sticky;
+     flex: 0 0 auto;
+     justify-content: space-around;
+ }
+
+      /* для footer end*/
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    .content {
+        flex: 1 0 auto;
+    }
+    
