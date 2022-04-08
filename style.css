@@ -53,7 +53,7 @@ html{
 
 body {
     background: url(images/SSP.png) no-repeat;
-    background-repeat: round;
+    background-size: cover;
     font-family: 'Fjalla One', sans-serif;
     height: 100%;
     /*display: flex;*/
@@ -125,33 +125,42 @@ p{
 
 /* для видео start*/
     .video{
-      margin-top: 15vh;
+      margin-top: 20vh;
       width: 100wh;
       height: 100px;
       display:flex;
       flex-direction: row;
       cursor: pointer;
+      justify-content: space-around;
     }
     .slide-video{
       height: 200px;
       margin: 5px;
+      border-radius: 3px;
     }
    /*  для видео end*/
 
    /* для more_video start*/
 .more_video{
-    width: 200px;
+    width: 120px;
     height: 60px;
     margin-top: 20vh;
-    margin-left: 10vh;
+    margin-left: 20vh;
 }
    /* для more_video end*/
+
+   /* для games start*/
+.games{
+    width: 60px;
+    height: 40px;
+    margin-left: 5vh;
+}
+   /* для games end*/
 
   /* для фото start*/
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 .accordion {
-    margin-top: 5vh;
     width: 100wh;
     height: 120px;
    /* margin: 5px auto;*/
