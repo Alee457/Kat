@@ -143,12 +143,23 @@ p{
     }
    /*  для видео end*/
 
+   
+/* для inline start*/
+.inline{
+    display: table;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    border-spacing: 20px 20px; 
+}
+/* для inline end*/
+
    /* для more_video start*/
 .more_video{
     width: 120px;
     height: 60px;
     margin-top: 20vh;
-    margin-left: 20vh;
+    margin-left: 15px;
+    display: table-cell; 
 }
    /* для more_video end*/
 
@@ -157,7 +168,9 @@ p{
     width: 60px;
     height: 40px;
     margin-left: 5vh;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
+    display: table-cell; 
+   
 }
    /* для games end*/
 
